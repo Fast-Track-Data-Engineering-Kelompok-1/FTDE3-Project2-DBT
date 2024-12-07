@@ -32,5 +32,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   digitalskola_project2:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    +materialized: table
+    raw:
+      +schema: "raw"
+    intermediate:
+      +schema: "intermediate"
+    mart:
+      +schema: "mart"
