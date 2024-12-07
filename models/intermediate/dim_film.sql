@@ -27,7 +27,7 @@ SELECT
     rental_rate,
     length,
     replacement_cost,
-    rating_label,
+    rating,
     last_update,
     special_features,
     fulltext
